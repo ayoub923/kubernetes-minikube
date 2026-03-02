@@ -379,3 +379,23 @@ kubectl delete services myservice
 kubectl delete deployment myservice
 ```
 
+# TP Kubernetes Minikube - Ayoub
+
+## Docker Image
+
+Image construite et publiée sur Docker Hub :
+
+docker pull ayoub260304/myservice:1
+
+Docker Hub :
+https://hub.docker.com/r/ayoub260304/myservice
+
+## Déploiement Kubernetes
+
+Création du deployment :
+
+kubectl create deployment myservice --image=ayoub260304/myservice:1
+
+Vérification :
+
+kubectl get pods
